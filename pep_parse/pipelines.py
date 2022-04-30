@@ -2,7 +2,7 @@ import csv
 import datetime as dt
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(__file__).parent.parent
 CSV_HEADER = ['Статус', 'Количество']
 CSV_FILE_NAME = 'status_summary_{time}.csv'
 TIME_FORMAT = '%Y-%m-%dT%H-%M-%S'

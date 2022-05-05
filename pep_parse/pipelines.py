@@ -16,10 +16,7 @@ class PepParsePipeline:
 
     def process_item(self, item, spider):
         st = item['status']
-        if st not in self.st_amount:
-            self.st_amount[st] = 1
-        else:
-            self.st_amount[st] += 1
+        self.st_amount[st] = self.st_amount.get(st, 0) + 1
         self.total += 1
         return item
 

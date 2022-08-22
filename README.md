@@ -15,7 +15,7 @@ git clone https://github.com/firepanda70/scrapy_parser_pep
 - Создать и активировать виртуальное окружение:
 
 ```
-python -m venv env
+python -m venv venv
 source venv/bin/activate
 python -m pip install --upgrade pip
 ```
